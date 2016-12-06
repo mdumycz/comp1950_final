@@ -14,19 +14,15 @@
 			
 		}
 		
-		//var expandSidebar = $('#expand-sidebar');
-		
 		if (topPos == 0) {
 			sidebar.css('top', defaultSidebarTop+'px');
 		}
-		if (topPos > 0 && topPos <= 40) {
+		if (topPos > 0 && topPos <= 70) {
 			sidebar.css('top', (defaultSidebarTop-topPos)+'px');
-			//expandSidebar.css('top',(120-topPos)+'px');
 		}
-		if (topPos > 40) {
+		if (topPos > 70) {
 			$('#top-nav').addClass('top-nav-fixed');
 			sidebar.css('top',$('#top-nav').outerHeight());
-			//expandSidebar.css('top',$('#top-nav').outerHeight()+10);
 		} else {
 			$('#top-nav').removeClass('top-nav-fixed');
 		}
