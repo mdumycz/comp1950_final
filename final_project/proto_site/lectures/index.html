@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Group5: Lectures - BCIT COMP1950</title>
+	<meta charset="utf-8">
+	<meta content="Lecture Notes for COMP1950" name="description">
+	<link href="/63dumm/final_project/proto_site/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="/63dumm/final_project/proto_site/css/layout.css" rel="stylesheet" type="text/css">
+	<link href="/63dumm/final_project/proto_site/css/screen-layout.css" media="screen" rel="stylesheet" type="text/css" title="Normal">
+	<link href="/63dumm/final_project/proto_site/css/overhead-layout.css" media="screen" rel="alternate stylesheet" type="text/css" title="Overhead">
+	<link href="/63dumm/final_project/proto_site/css/print-layout.css" media="print" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="content">
+		<header>
+			<div id="header-title">
+				<!--#include virtual="/63dumm/final_project/proto_site/inc/header-title.inc"-->
+			</div>
+			<nav id="top-nav">
+				<!--#include virtual="/63dumm/final_project/proto_site/inc/top-nav.inc"-->
+			</nav>
+		</header>
+		
+		<nav id="sidebar-menu">
+			<!--#include virtual="/63dumm/final_project/proto_site/inc/lectures-side-nav.inc"-->
+		</nav>
+		
+		<main id="main-column">
+			<h1 id="section-title">Introduction</h1>
+			<hr class="section-title-line">
+			<section id="main-section">
+				<header class="contents">
+					<h4>Contents</h4>
+					<ol>
+						<li><a href="#sharefile">BCIT network: sharefile</a></li>
+						<li><a href="#webspace">Orientation: Web space</a></li>
+						<li><a href="#ftp">Connect to your bcitcomp.ca account via FTP</a></li>
+					</ol>
+				</header>
+				
+				<span class="bookmark" id="sharefile">&nbsp;</span>
+				<article>
+					<h2>BCIT network: sharefile</h2>
+					<p>BCIT lab computers are re-imaged each day, meaning you will lose any files you save on the local C: drive of a lab computer.</p>
+					<p><strong>Choose ONE of the folowing:</strong></p>
+					<ul>
+						<li>Use <a href="http://kb.bcit.ca/sr/sharefile/2052.shtml">BCIT Sharefile</a> to save your work</li>
+						<li>Save your work to your personal USB or cloud storage account</li>
+						<li>Use your own laptop in class, and dont use the BCIT lab computers</li>
+					</ul>
+					
+				</article>
+				
+				<span class="bookmark" id="webspace">&nbsp;</span>
+				<article>
+					<h2>Orientation: Web space</h2>
+					<p>
+						Each student will get personal webspace. This is not a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your exercises, assignments, group work and more. Make it a site that is usable and functional.
+					</p>
+					<ul>
+						<li>Your instructor will create webspaces for each of you.</li>
+						<li>
+							Email your instructor this information:
+							<ul>
+								<li>your myBCIT email name - eg: youname123@my.bcit.ca</li>
+								<li>your student number - eg: A00123456</li>
+								<li>a case sensitive password you will remember - ???</li>
+							</ul>
+						</li>
+						<li>Your URL will be: <strong>http://bcitcomp.ca/students/{your_mybcit_email_name}</strong></li>
+					</ul>
+				</article>
+				
+				<span class="bookmark" id="ftp">&nbsp;</span>
+				<article>
+					<h2>Connect to your bcitcomp.ca account via FTP</h2>
+					<p>
+						Use Filezilla, or any FTP client to connect to bcitcomp.ca. The bcitcomp.ca server provides you with a space on the internet where you can publish your homework and assignments.
+					</p>
+					<ol>
+						<li>choose: File->SiteManager->New Site, then describe the FTP server, eg "bcitcomp.ca"</li>
+						<li>Host: bcitcomp.ca</li>
+						<li>Port: 21</li>
+						<li>User: {yourStudentNumberUsingAnUppercaseA}@bcitcomp.ca</li>
+						<li>Password: {determined by you via email to your instructor}</li>
+						<li>Servertype: FTP File Transfer Protocol</li>
+						<li>LogonType: Normal</li>
+						<li>click: Connect</li>
+					</ol>
+					
+				</article>
+			</section>
+			<section id="right-section">
+				<!--#include virtual="/63dumm/final_project/proto_site/inc/dynamic-right-section.inc" -->
+			</section>
+		</main>
+	</div>
+	<script src="/63dumm/final_project/proto_site/js/jquery-3.1.1.min.js"></script> 
+	<script src="/63dumm/final_project/proto_site/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/*** print laytout ***/
+
+body, #content, main {
+	color: black;
+	font: 12pt/15pt "Times New Roman", Georgia, Serif;
+	width: auto;
+	background: none;
+}
+
+.bcit-color {
+	color: black;
+}
+
+/*** all nav menu, right section, contents, bookmark, and
+other elements with print-hidden class make hidden ***/
+nav, #right-section, .section-title-line, .contents,
+.bookmark, .print-hidden {
+	display: none;
+}
+
+a:link, a:visited {
+	color: #330099;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*** add URL after anchor ***/
+a[href^="http"]:link:after, 
+a[href^="http"]:visited:after{
+   content: " (URL: " attr(href) ") ";
+   font-size: 90%;
+}
+
+h2,h3,h4,h5,h6 {
+	page-break-after: avoid;
+}
+
+#header-title h1 {
+	font: 24pt "Arial Black", Gadget, sans-serif;
+	font-weight: normal;
+}
+
+header {
+	margin-bottom: 10px;
+}
+
+#main-column {
+	margin: 0;
+	padding: 0;
+}
+
+#main-section {
+	margin: 0;
+	float: none;
+	width: 100%
+}
+
+#section-title {
+	font: 18pt "Arial Black", Gadget, sans-serif;
+	margin-bottom: 20px;
+	font-weight: normal;
+	border: none;
+}
+
+/*** page break after article ***/
+article {
+	page-break-after: always;
+	margin-left: 20px;
+}
+
+#left-side-main, #right-side-main {
+	width: 100%;
+}
+
+#left-side-main section, #right-side-main section {
+	margin-left: 20px;
+}
+
+#main-section article > h2, #left-side-main section > h2,
+#right-side-main section > h2 {
+	font-size: 14pt;
+	margin-bottom: 10px;
+	margin-left: -20px;
+    border: none;
+	font-weight: bold;
+}
+
+/*** page break if main section has 2 columns ***/
+.main-two-column {
+	page-break-after: always;
+}
+
+#left-side-main {
+	border: none;
+}
+
+/*** article in 2-column at main section set non-page-break ***/
+.main-two-column article{
+	page-break-after: avoid;
+}
+
+#news article h3 {
+	font-weight: bold;
+}
+
+/*** recent lecture at home page ***/
+#recent-lecture ul {
+	list-style-type: disc;
+}
+#recent-lecture ul li {
+	height: auto;
+	border: none;
+}
+
+/*** one-day calendar ***/
+.calendar {
+	list-style-type: disc;
+}
+.calendar li {
+	height: auto;
+	border: none;
+}
+
+.one-day-calendar {
+	width: auto;
+	text-align: left;
+	float: none;
+	margin-right: 0;
+	display: inline;
+}
+
+.calendar-month {
+	border: none;
+	border-radius: 0;
+	text-transform: none;
+	background: none;
+	color: black;
+	display: inline;
+	font-weight: bold;
+}
+
+.calendar-day {
+	display: inline;
+	border:none;
+	border-radius: 0;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.calendar-time::before {
+	content: " @ ";
+	font-weight: bold;
+}
+
+/*** flex box must be removed ***/
+.flex-container {
+	display: inline;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.flex-item {
+	-webkit-flex: none;
+	flex: none;
+	width: 100%;
+	border-bottom: none;
+	page-break-after: avoid;
+}
+
+.flex-item h2 {
+	margin-left: 0 !important;
+}
+
+.flex-item h4 {
+	font-size: 12px;
+}
+
+

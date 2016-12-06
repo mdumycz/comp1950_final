@@ -1,0 +1,67 @@
+/*** screen layout; extended from layout.css ***/
+
+body {
+	font-size: 14px;
+}
+
+/* header style*/
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+#top-nav ul li a {
+	padding: 6px 10px;
+}
+
+#sidebar-menu {
+	top: 104px;
+	width: 200px;
+}
+
+#main-column {
+	margin-left: 200px;
+	padding: 20px;
+}
+
+.no-sidemenu {
+	margin-left: 20px !important;
+}
+
+#main-section {
+	width: 80%;
+}
+
+#right-section {
+	width: 20%;
+}
+
+#section-title {
+	font-size:48px;
+}
+
+.flex-item h2 {
+	font-size: 16px;
+}
+.flex-item h4 {
+	font-size: 14px;
+}

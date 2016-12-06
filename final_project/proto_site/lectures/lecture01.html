@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Group5: Lecture Note 01 - BCIT COMP1950</title>
+	<meta charset="utf-8">
+	<meta content="The lecture notes 01 introduces web development tools and standards" name="description">
+	<link href="/63dumm/final_project/proto_site/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="/63dumm/final_project/proto_site/css/layout.css" rel="stylesheet" type="text/css">
+	<link href="/63dumm/final_project/proto_site/css/screen-layout.css" media="screen" rel="stylesheet" type="text/css" title="Normal">
+	<link href="/63dumm/final_project/proto_site/css/overhead-layout.css" media="screen" rel="alternate stylesheet" type="text/css" title="Overhead">
+	<link href="/63dumm/final_project/proto_site/css/print-layout.css" media="print" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="content">
+		<header>
+			<div id="header-title">
+				<!--#include virtual="/63dumm/final_project/proto_site/inc/header-title.inc"-->
+			</div>
+			<nav id="top-nav">
+				<!--#include virtual="/63dumm/final_project/proto_site/inc/top-nav.inc"-->
+			</nav>
+		</header>
+		
+		<nav id="sidebar-menu">
+			<!--#include virtual="/63dumm/final_project/proto_site/inc/lectures-side-nav.inc"-->
+		</nav>
+		
+		<main id="main-column">
+			<h1 id="section-title">Lecture 01: Tools &amp; Standards</h1>
+			<hr class="section-title-line">
+			<section id="main-section">
+				<header class="contents">
+					<h4>Contents</h4>
+					<ol>
+						<li><a href="#agenda">Agenda</a></li>
+						<li><a href="#webdev">Tools: Web Development</a></li>
+						<li><a href="#browser-based">Tools: Browser-based development</a></li>
+						<li><a href="#firefox">Tools: Firefox Extensions</a></li>
+						<li><a href="#homework">Homework</a></li>
+						<li><a href="#next-class">Next Class...</a></li>
+					</ol>
+				</header>
+				
+				<span class="bookmark" id="agenda">&nbsp;</span>
+				<article class="print-hidden">
+					
+					<h2>Agenda</h2>
+					<ul>
+						<li>Introductions</li>
+						<li>Orientation</li>
+						<li>Web Development Tools</li>
+						<li>Standards Based Development</li>
+					</ul>
+				</article>
+				
+				<span class="bookmark" id="webdev">&nbsp;</span>
+				<article>
+					<h2>Tools: Web Development</h2>
+					<p>There are a LOT of tools to choose from these days. Desktop and mobile apps, online tools and services, etc.</p>
+					<p><strong>What kind of tools do you use?</strong></p>
+					<p>
+						Workflow is defined as the process you take getting from start to completion on a task or series of tasks. For web development, it generally results in a page that has been created or updated by the use some kind of tool.
+					</p>
+					<p>
+						There is no perfect platform or workflow, there is only <strong>your</strong> platform and workflow that matters.  Once you can get the job done, you are off to the races, so find a workflow that suits you the best.
+					</p>
+
+					<p>Some of the tools used by web developers...</p>
+					<h4>Text Editors</h4>	
+					<ul>
+						<li><a href="http://notepad-plus-plus.org/">Notepad++</a> - Text Editor (Win) * installed in BCIT lab computers *</li>
+						<li><a href="http://www.sublimetext.com/2">Sublime Text 2</a> - Text Editor (Mac/Win)</li>
+						<li><a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> - Text Editor (Mac)</li>
+					</ul>
+					<h4>FTP (File Transfer Protocol) Clients</h4>	
+					<ul>				
+						<li><a href="http://filezilla-project.org">Filezilla</a> - FTP tool (Win) * installed in BCIT lab computers *</li>
+						<li><a href="http://cyberduck.ch/">Cyberduck FTP</a> - FTP tool (Mac)</li>
+						<li><a href="http://www.wsftple.com/">WS FTP</a> - FTP tool (Win)</li>		
+							
+					</ul>
+					<h4>IDEs (Integrated Development Environments)</h4>
+					<ul>		
+						<li><a href="http://www.panic.com/coda/">Coda</a> - Web Dev IDE (Mac)</li>
+						<li><a href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a> - Web Dev IDE (Mac/Win)</li>
+						<li><a href="http://www.aptana.com/">Aptana</a> - Web Dev IDE (Win/Mac)</li>
+						<li><a href="http://www.htmlkit.com/">HTMLKit</a> - Web Dev IDE (Win)</li>
+						<li><a href="http://www.textasticapp.com/">Textastic</a> - Web Dev IDE (iPad)</li>
+						<li><a href="http://www.activestate.com/komodo-edit">Komodo</a> - Web Dev IDE (Mac/Win)</li>
+					</ul>
+					<h4>Team Development</h4>
+					<ul>		
+						<li><a href="http://dropbox.com">Dropbox</a> - File Sharing (Web)</li>
+						<li><a href="https://github.com/">GitHub</a> - Collaborative Development (Web/Client)</li>
+					</ul>
+				</article>
+				
+				<span class="bookmark" id="browser-based">&nbsp;</span>
+				<article>
+					<h2>Tools: Browser-based development</h2>
+					<p>
+						Today, most modern browsers have some kind of development environment that can be turned on or triggered via extensions and/or plug-ins.
+					</p>
+					<p>
+						There are presently two major development platforms, with a few variations for examining and developing web pages.
+					</p>
+					<ul>
+						<li><a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a>
+							<ul>
+								<li>Mozilla Foundation's web platform created by web developers</li>
+								<li>Gecko rendering engine: fast and progressive</li>
+								<li>Excellent level of standards compliance</li>
+								<li>Corporate independence</li>
+								<li>No built-in development tools</li>
+								<li>Plethora of add-ons that make web development easy</li>
+								<li>Add-ons have a downside: bloat</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><a href="http://www.webkit.org/">WebKit</a>
+							<ul>
+								<li>This is the platform that gives us <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://www.apple.com/safari/">Safari</a> and <a href="http://www.opera.com/">Opera</a>, with a few other smaller browsers out there as well.</li>
+								<li>Excellent platform that is very fast and standards compliant</li>
+								<li>Third parties can download the source, make local adjustments and release their own version, as Google and Apple have both done</li>
+								<li>Standalone version can be downloaded at any time for the latest release</li>
+								<li>Development is done via the built-in Developer Tools</li>
+								<li>Initially a thin environment, recent releases have made Webkit-based browsers excellent for developers</li>
+								<li>Macintosh based developers may need to <a href="http://www.jonhartmann.com/index.cfm/2011/4/28/Enabling-Safari-Developer-Tools">enable web developer options</a> in Safari before accessing the devloper tools</li>
+							</ul>
+						</li>
+					</ul>
+					<p>
+						<strong>Remember to test in as many browsers as you can! Useful tools for this are <a href="http://browsershots.org/">BrowserShots</a> (Chrome, Firefox, Safari, Opera) and <a href="http://netrenderer.com/">Netrenderer</a> (For IE)</strong>
+					</p>
+				</article>
+				
+				<span class="bookmark" id="firefox">&nbsp;</span>
+				<article>
+					<h2>Tools: Firefox Extensions</h2>
+					<p>Extensions are a big part of Firefox, especially considering the background the browser has in web development.</p>
+					<p>
+						In fact, web development even has it's own category dedicated to <a href="https://addons.mozilla.org/en-US/firefox/browse/type:1/cat:4">Web and Developer Tools</a> 
+					</p>
+					<p>
+						One of the best tools for Web Developers is the <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/?src=search">Web Developer toolbar</a>
+					</p>
+					<p>
+						The author, Chris Pedrick, maintains a <a href="http://chrispederick.com/work/webdeveloper/"> site for the Web Developer extension</a>. He has even created a version for seeral other browsers, though it isn't quite as full-featured.
+					</p>
+					<p>Some of the amazing tools this has to offer web developers:</p>
+					<ul>
+						<li>Disable styles - by embedded/linked/inline as well as all styles, or just a single sheet</li>
+						<li>Edit CSS &amp; HTML - Make live changes to your CSS or HTML!</li>
+						<li>Images - outlining, file sizes, alt information... lots more</li>
+						<li>Form detail - useful for working with form elements</li>
+						<li>Cookie examination and manipulation</li>
+						<li>Built in validators</li>
+						<li>Line Guides &amp; Rulers</li>
+						<li>Element inspector</li>
+					</ul>
+
+					<p>
+						<strong>Let's take a quick look at the Web Developer Toolbar</strong>
+					</p>
+					<ul>
+						<li>Install it if you have not already done so</li>
+						<li>Validate the HTML of this page with the Tools tab (Tools &gt; Validate HTML)</li>
+						<li>Validate the CSS of this page with the Tools tab (Tools &gt; Validate CSS)</li>	
+						<li>View the CSS of the page (CSS &gt; View)</li>
+					</ul>
+				</article>
+				
+				<span class="bookmark" id="homework">&nbsp;</span>
+				<article class="print-hidden">
+					<h2>Homework</h2>
+					<p><a href="#">Download Homework01</a></p>
+					<p>Due at 11:59 p.m. before next class.</p>
+				</article>
+				
+				<span class="bookmark" id="next-lecture">&nbsp;</span>
+				<article class="print-hidden">
+					<h2>Next Lecture...</h2>
+					<p>Quiz 1 at beginning of class - Don't be late!</p>
+					<p>We learn about HTML5.</p>
+					<p>Please read through next course material prior to next class.</p>
+				</article>
+			</section>
+			<section id="right-section">
+				
+				<article>
+					<h4>Related Exercise</h4>
+					<p><a href="/63dumm/final_project/proto_site/exercises/exercise01.html">Exercise01</a></p>
+				</article>
+				<!--#include virtual="/63dumm/final_project/proto_site/inc/dynamic-right-section.inc" -->
+			</section>
+		</main>
+	</div>
+	<script src="/63dumm/final_project/proto_site/js/jquery-3.1.1.min.js"></script> 
+	<script src="/63dumm/final_project/proto_site/js/main.js"></script>
+</body>
+</html>

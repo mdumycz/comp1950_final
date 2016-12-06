@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Group5: Quiz 01 - BCIT COMP1950</title>
+	<meta charset="utf-8">
+	<link href="/63dumm/final_project/proto_site/css/layout.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="/63dumm/final_project/proto_site/css/jquery.simple.timer.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="content">
+		<section id="quiz">
+			<header class="quiz-header">
+				<h2>Quiz #1</h2>
+				<label>Time Remaining: </label><span id="time-remaining" class="timer" data-seconds-left="900"></span>
+			</header>
+			<form class="quiz-form">
+				<ol>
+					<li>Name at least two things that you should do to a web page to display it for printing. (2)
+						<div class="answer-field"><textarea name="q1"></textarea></div>
+					</li>
+					
+					<li>Media queries can be applied either in the link tag or defined in an external CSS file. (1)
+						<div class="answer-field">
+							<table class="multiple-choice">
+								<tbody>
+									<tr>
+										<td class="widget-col"><input type="radio" name="q2" value="t"></td>
+										<td class="label-col">True</td>
+									</tr>
+									<tr>
+										<td class="widget-col"><input type="radio" name="q2" value="f"></td>
+										<td class="label-col">False</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>Complete the CSS rule below to ensure images will scale to the size of the parent. (2)
+						<div class="answer-field"><textarea name="q3"></textarea></div>
+					</li>
+					<li>Choose the media query breakpoint that will match when the browser viewport is thinnest. (1)
+						<div class="answer-field">
+							<table class="multiple-choice">
+								<tbody>
+									<tr>
+										<td class="widget-col"><input type="radio" name="q4" value="a"></td>
+										<td class="label-col"><pre>@media only screen and (min-width:1024px)</pre></td>
+									</tr>
+									<tr>
+										<td class="widget-col"><input type="radio" name="q4" value="b"></td>
+										<td class="label-col"><pre>@media only screen and (min-width:300px) and (max-width:800px)</pre></td>
+									</tr>
+									<tr>
+										<td class="widget-col"><input type="radio" name="q4" value="c"></td>
+										<td class="label-col"><pre>@media only screen and (min-width:800px) and (max-width:1024px)</pre></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>Write the media query breakpoint for when a browser viewport is less than 400px tall (2)
+						<div class="answer-field"><textarea name="q5"></textarea></div>
+					</li>
+					<li>Name at least two design best practices when styling for small devices. (2)
+						<div class="answer-field"><textarea name="q6"></textarea></div>
+					</li>
+				</ol>
+				<div class="action-button">
+					<input class="btn btn-primary" type="submit" value="Submit Quiz">
+				</div>
+			</form>
+		</section>
+		
+		<script src="/63dumm/final_project/proto_site/js/jquery-3.1.1.min.js"></script>
+		<script src="/63dumm/final_project/proto_site/js/jquery.simple.timer.js"></script>
+		<script>
+		(function($) {
+			$('#time-remaining').startTimer({
+				onComplete: function(element) {
+					element.addClass('is-complete');
+				}
+			});
+		}) ( jQuery );
+		</script>
+	</div>
+</body>

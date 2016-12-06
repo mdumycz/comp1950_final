@@ -1,0 +1,75 @@
+/*** overhead projector layout ***/
+
+body {
+	font-size: 24px;
+}
+
+/* header style*/
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+/*** top menu ***/
+#top-nav ul li a {
+	padding: 10px 15px;
+}
+
+/*** sidebar menu ***/
+#sidebar-menu {
+	top: 136px;
+	width: 250px;
+	display: none;
+}
+
+/*** main column ***/
+#main-column {
+	margin-left: 20px;
+	padding: 20px;
+}
+
+/*** main section ***/
+#main-section {
+	width: 100%;
+}
+/*** right section ***/
+#right-section {
+	display: none;
+}
+
+/*** expand sidebar ***/
+#expand-sidebar {
+	display: block;
+}
+
+/*** main title for page ***/
+#section-title {
+	font-size:72px;
+}
+
+/*** flex box ***/
+.flex-item h2 {
+	font-size: 26px;
+}
+.flex-item h4 {
+	font-size: 24px;
+}

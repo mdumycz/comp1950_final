@@ -1,0 +1,52 @@
+
+.timer, .timer-done, .timer-loop {
+    color: black;
+    font-size: 18px;
+	font-weight: bold;
+    padding: 10px;
+}
+
+.jst-hours {
+    float: left;
+}
+.jst-minutes {
+    float: left;
+}
+.jst-seconds {
+    float: left;
+}
+.jst-clearDiv {
+    clear: both;
+}
+.jst-timeout {
+    color: red;
+}
+.is-complete {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: blinker;
+    animation-name: blinker;
+    -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    color: red;
+}
+
+@-webkit-keyframes blinker {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes blinker {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
