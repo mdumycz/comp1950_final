@@ -104,7 +104,7 @@ article {
 	float: left;
 }
 #top-nav ul li a {
-	color: #e6e6e6;
+	color: #a9a9a9;
 	display: block;
 	padding: 6px 10px;
 	text-align: left;
@@ -166,18 +166,20 @@ article {
 	display: block;
 	padding: 4px 2px 4px 30px;
 	text-decoration: none;
-	color: #e6e6e6;
+	color: #a9a9a9;
 }
 
 /*** all nav menu applies ***/
 nav ul li a:hover {
-	background-color: #1a1a1a
-	/*background-color: #002b80;
-	color: #fff !important;*/
+	background-color: #1a1a1a;
+	color: #fff !important;
 }
 nav ul li.active {
 	background-color: #1a1a1a;
-	/*color: #fff;*/
+}
+
+nav ul li.active a {
+	color: #fff !important;
 }
 
 /*** main column ***/
