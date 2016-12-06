@@ -1,0 +1,138 @@
+/*
+	HTML styles
+*/
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;	
+}
+
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	color: white;
+	padding-left: 30px;
+	padding-top: 23px;
+}
+
+nav {
+	width: 100%;
+	height: 36px;
+	position: absolute;
+	bottom: 0px;
+}
+
+nav ul {
+	display: block;
+	height: 30px;
+	width: 100%;
+	list-style: none;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+}
+
+nav li {
+	display: block;
+	width: 25%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	line-height: 34px;
+	border: 2px solid #002b80;
+	border-left: none;
+}
+
+nav a:link, nav a:visited {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	background: #002b80;
+	background: -webkit-linear-gradient(left, #002b80, blue, #002b80);
+	background: -o-linear-gradient(left, #002b80, blue, #002b80);
+	background: -moz-linear-gradient(left, #002b80, blue, #002b80);
+	background: linear-gradient(to right, #002b80, blue, #002b80); 
+}
+
+h1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: bold;
+	font-size: 2.4em;
+	vertical-align: middle;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h2 a:link, h2 a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+h3 {
+	font-style: italic;
+	text-align: right;
+	margin-bottom: 15px;
+}
+
+article {
+	box-sizing: border-box;
+	padding: 20px;
+	border: 1px solid black;
+	box-shadow: 10px 10px 5px #888888;
+	
+}
+
+/*
+	Class styles
+*/
+
+
+
+/*
+	ID styles
+*/
+
+#top {
+	width: 100%;
+	height: 130px;
+	background-color: #002b80;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+#main {
+	width: 800px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#firstnav {
+	margin-left: 2px;
+}
+
+#currentnav {
+	background: green;
+	background: -webkit-linear-gradient(left, #002b80, green, #002b80);
+	background: -o-linear-gradient(left, #002b80, green, #002b80);
+	background: -moz-linear-gradient(left, #002b80, green, #002b80);
+	background: linear-gradient(to right, #002b80, green, #002b80); 
+}
