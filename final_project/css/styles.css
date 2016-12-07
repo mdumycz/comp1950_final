@@ -54,6 +54,7 @@ nav li {
 	line-height: 34px;
 	border: 2px solid #002b80;
 	border-left: none;
+	padding: 0;
 }
 
 nav a:link, nav a:visited {
