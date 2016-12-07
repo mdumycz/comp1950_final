@@ -20,6 +20,11 @@ header {
 	padding-top: 23px;
 }
 
+ul li {
+	padding: 5px;
+    
+}
+
 nav {
 	width: 100%;
 	height: 36px;
@@ -92,19 +97,38 @@ h3 {
 	margin-bottom: 15px;
 }
 
-h4 {
-	margin-bottom: 15px;
-}
-
 article {
 	box-sizing: border-box;
 	padding: 20px;
 	border: 1px solid black;
 	box-shadow: 10px 10px 5px #888888;
+	
 }
 
-article ul {
-	padding-left: 15px;
+p {
+	padding: 10px;
+	
+}
+
+figure {
+	float: left;
+	padding: 10px;
+	width: 160px;
+	
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+figure::after {
+	clear: both;
+}
+
+figcaption {
+	font-size: 10px;
+	font-weight: bold;
 }
 
 /*
@@ -142,4 +166,9 @@ article ul {
 	background: -o-linear-gradient(left, #002b80, green, #002b80);
 	background: -moz-linear-gradient(left, #002b80, green, #002b80);
 	background: linear-gradient(to right, #002b80, green, #002b80); 
+}
+
+.critical {
+	font-weight: bold;
+	color: red;
 }
